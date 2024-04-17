@@ -1,0 +1,55 @@
+@import "./typography.scss";
+@import "./colors.scss";
+
+.heading_text{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.headers_link{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: blue;
+  }
+.section {
+    margin:0 auto;
+    max-width:1036px;
+    width:100%;
+}
+.image{
+    height: 320px;
+    margin: 0 auto;
+    max-width: 455px;
+}
+.main_inner{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    //max-width: 64.75rem;
+}
+.main_inner .wrapper_left{
+    padding: 1rem;
+    width: 50%;
+}
+.main_inner .wrapper_right{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 50%;
+}
+.main_inner .inner_wrapper{
+    font-size: 18px;
+    line-height: 27px;
+  
+}
+
+@media (max-width: 480px){
+    .section {
+        margin:0 auto;
+        max-width:1036px;
+        width:100%;
+        padding-top: 60px;
+    }
+  }

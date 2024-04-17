@@ -1,0 +1,237 @@
+
+@import "./typography.scss";
+@import "./colors.scss";
+
+.body1 {
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.main1 {
+    background-color: #4B2913;
+}
+
+.menu_button{
+    background: transparent;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.header1 {
+    @extend .headingOne;
+    background-color: #4B2913;
+    color: white;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    padding-left: 10px;
+    //padding-bottom: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    z-index: 7;
+}
+
+.header1 li {
+    margin: 0px;
+}
+
+.header1 li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header1 .logo{
+    @extend .headingOne;
+    display: flex;
+    align-items: left;
+    justify-content: left; 
+    width: 350px;
+    font-size: 32px;
+
+}
+.header1 .menu_items{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    // width: 600px;
+}
+
+
+.btn {
+    @extend .headingOne;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+    color: lightgray;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.96);
+    }
+  }
+
+  .about_btn {
+    @extend .headingOne;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+    color: lightgray;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    width: 150px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(.97);
+    }
+  }
+  .comp_btn{
+    @extend .headingOne;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+    color: lightgray;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+    width: 350px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.97);
+    }
+  }
+  .tips_btn{
+    @extend .headingOne;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+    color: lightgray;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.97);
+    }
+  }
+  
+  
+  
+  .nav{
+    background: $primary;
+    opacity: 0.75;
+    height: 45px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 0px;
+    z-index: 12;
+  }
+
+.menu_wrapper{
+    display: none
+}
+.list_wrapper{
+    width: 850px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+@media (max-width: 480px) {
+    .nav {
+      display: none;
+    }
+    .navBar{
+        z-index: 7;
+    }
+    .header1 {
+        @extend .headingOne;
+        background-color: #4B2913;
+        color: white;
+
+        position: fixed; 
+        top: 0;
+        display: flex;
+        height: 10vh;
+        padding-right: 1000px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .header1 .logo{
+        @extend .headingOne;
+        display: flex;
+        align-items: left;
+        justify-content: left; 
+        width: 350px;
+        font-size: 24px;
+    
+    }
+    .header1 .menu_items{
+        display: flex;
+
+    }
+
+    
+    .list_wrapper{
+        display: none;
+    }
+    .menu_wrapper{
+        display: flex;
+        position: fixed;
+        right: 0;
+    }
+
+    .menu-button-container {
+        display: flex;
+      }
+      .menu {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        padding-top: 200px;
+        right:0;
+        
+        background: #4B2913;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        
+        transform-origin: 100% 0%;
+        transform: translate(0%, 0%);
+        transition: transform 5s cubic-bezier(.48,.47,.99,1.01);
+      }
+
+      .menu li
+      {
+        display: flex;
+        list-style: none;
+        padding: 10px 0;
+        font-size: 18px;
+      }
+
+      .menu_list{
+        position: fixed;
+        top: 0;
+      }
+      
+
+
+
+  }

@@ -1,0 +1,138 @@
+@import "./typography.scss";
+@import "./colors.scss";
+
+.buildingName {
+  @extend .headingTwo;
+  display: inline;
+}
+
+.header {
+  display: "flex";
+  align-items: "center";
+  padding: 2rem 0;
+
+  .arrow {
+    display: inline;
+    height: 2.75rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(0.95);
+      cursor: pointer;
+    }
+  }
+}
+
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+
+.equivalenciesSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.graph_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  // padding: 2rem 0;
+}
+
+.card {
+  position: relative;
+  width: 28%;
+  margin: 0.5rem;
+  background-color: $surface;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 1rem 1rem 0.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3 {
+    @extend .subtitle;
+  }
+
+
+  .eq {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: Helvetica, sans-serif;
+    font-style: bold;
+    // justify-self: "flex-end";
+  }
+
+}
+
+@media (max-width: 480px){
+  .graph_container{
+    //fill elements to 100% width
+    width: 100%;
+
+
+  }
+  .equivalenciesSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 40%;
+
+    &::after {
+      padding-bottom: 150%;
+    }
+    img {
+      width: auto;
+      height: auto;
+    }
+    h3 {
+      @extend .subtitle;
+    }
+    .eq {
+      font-size: 18px;
+      line-height: 32px;
+      font-family: Arial, Helvetica, sans-serif, sans-serif;
+      font-style: bold;
+      // justify-self: "flex-end";
+    }
+  
+  }
+
+}

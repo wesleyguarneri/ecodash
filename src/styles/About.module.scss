@@ -1,0 +1,45 @@
+@import "./typography.scss";
+@import "./colors.scss";
+
+
+.heading_text{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    @extend .headingThree;
+}
+
+.main_inner{
+    @extend .body;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.main_inner .inner_wrapper{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.section {
+    margin:0 auto;
+    max-width:1036px;
+    width:100%
+}
+.section_link{
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    color: blue;
+  }
+@media (max-width: 480px){
+    .section {
+        margin:0 auto;
+        max-width:1036px;
+        width:100%;
+        padding-top: 60px;
+    }
+  
+  }

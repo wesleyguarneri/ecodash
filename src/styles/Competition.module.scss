@@ -1,0 +1,126 @@
+@import "./typography.scss";
+
+.section {
+    margin:0 auto;
+    max-width:1036px;
+    width:100%
+}
+
+.section .leaderboard{
+   width: 60vw;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-left:auto;
+   margin-right:auto;
+   margin: 1rem auto;
+}
+
+
+.rank {
+  @extend .body;
+  width: 100%;
+  max-width: 250px;
+  position:absolute;
+  left: 800px;
+  top: 100px;
+  padding: 1rem 1rem;
+}
+.main_inner{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.section .styled_table {
+    border-collapse: collapse;
+    //margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled_table thead tr {
+    background-color:#013f28;
+    border-radius: 25px;
+    color: #ffffff;
+    text-align: left;
+    align-items: center;
+}
+.styled_table th,
+.styled_table td {
+    padding: 12px 15px;
+}
+.styled_table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled_table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled_table tbody tr:last-of-type {
+    border-bottom: 2px solid #013f28;
+}
+.styled_table tbody tr.active-row {
+    font-weight: bold;
+    color: #013f28;
+}
+
+.info_container{
+    @extend .body;
+    height: 200px auto;
+    width: 400px auto;
+    background-color: white;
+    padding: 10px;
+    border: solid 3px lightgray;
+    margin: 1rem auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    align-items: center;
+}
+
+.footNote{
+    font-family: Optima, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+@media (max-width: 480px){
+
+    .section {
+        position: absolute;
+        margin:0 auto;
+        max-width:480px;
+        width:100%;
+        padding-top: 60px;
+    }
+
+    .section .leaderboard{
+        max-width:480px;
+        width:100%;
+        padding-left: 20px;
+    }
+
+    .info_container{
+        @extend .body;
+        height: 200px auto;
+        width: 400px auto;
+        background-color: white;
+        padding: 10px;
+        border: solid 3px lightgray;
+        margin: 1rem auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        
+        text-align: center;
+        align-items: center;
+    }
+
+    .main_inner{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+  }

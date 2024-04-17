@@ -1,0 +1,49 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+:root{
+    --black: rgba(0,0,0,1);
+    --white: rgba(255, 255, 255, 1);
+    --green: rgba(0, 100, 0);
+    --lightgreen: rgba(127, 255, 0);
+    --font-size-m: 36px;
+    --font-size-1: 72px;
+  
+    --font-family-sansita: "Sansita";
+  }
+  
+  .sansita-normal-white-72px{
+    color: var(--white);
+    font-family: var(--font-family-sansita);
+    font-size: var(--font-size-1);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sansita-normal-white-36px{
+    color: var(--white);
+    font-family: var(--font-family-sansita);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sansita-normal-green-36px{
+    color: var(--green);
+    font-family: var(--font-family-sansita);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .sansita-normal-lightgreen-36px{
+    color: var(--lightgreen);
+    font-family: var(--font-family-sansita);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  
+          
