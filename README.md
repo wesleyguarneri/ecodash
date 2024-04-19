@@ -1,3 +1,7 @@
+## Delpoyment Link:
+https://ecodash-psi.vercel.app/
+
+
 This project uses Next.js and arcGIS online (AGOL).
 
 AGOL stores both the building metaData and the energy usage data from the shark meters. The data can easily be queried from
